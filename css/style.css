@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+    
+}
+
+:root{
+    --bg-color: #fff4e6;
+    --color1: #854442;
+    --color2: #be9b7b;
+    --color3: #48573f;
+    --dark1:#4b3832;
+    --dark2:#3c2f2f;
+    --text1:#dddddd;
+    --text2:#aaaaaa;
+    --big-font:2.5rem;
+    --p-font:1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--dark1);
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    font-family: 'Sacramento', cursive;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 25px 15%;
+    transition-duration: .3s;
+}
+
+.h4-span span {
+    color: var(--color3);
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 7px 10px 5px var(--dark2);
+    text-transform: uppercase;
+}
+
+.titik {
+    color: var(--text2);
+}
+
+.logo {
+    color: var(--dark1);
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    transition: all .30s;
+    
+}
+
+.logo:hover {
+    letter-spacing: 1rem;
+    transform: translateY(10px);
+    border: none;
+    text-shadow: 7px 10px 10px var(--dark2);
+}
+
+.navBar {
+    display: flex;
+    
+}
+
+.navBar li {
+    position: relative;
+}
+
+.navBar a {
+    color: var(--dark1);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.navBar a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height:2px;
+    background: var(--dark1);
+    left: 0;
+    bottom: -4px;
+    transition: ease .40s;
+}
+
+.navBar a:hover::after {
+    width: 100%;
+}
+
+
+#menu-icon {
+    font-size: 32px;
+    color: var(--dark2);
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+}
+
+.h-btn{
+    padding: 0 20px;
+    height: 40px;
+    display: inline-black;
+    line-height: 42px;
+    background: transparent;
+    color: var(--dark2);
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .30s;
+}
+
+.h-btn:hover {
+    /* background: var(--dark1);
+    color: var(--text1); */
+    transform: translateY(-5px);
+    text-shadow: 7px 10px 10px var(--dark2);
+    letter-spacing: 3px;
+}
+
+/* TOP CONTAINER */
+
+.top-container {
+    padding: 150px 10%;
+    height: 100vh;
+    width: 100%;
+    background: var(--bg-color);
+    position: relative;
+    text-align: center;
+}
+
+.top-container h1 {
+    position: relative;
+    padding-top: 10px;
+    /* padding-top: 50px; */
+    z-index: 100;
+    color: var(--dark2);
+    font-size: var(--big-font);
+    font-family: 'Sacramento', cursive;
+
+    /* margin: 50px auto 0 auto; */
+}
+.top-container h4 {
+    position: relative;
+    padding: auto;
+    z-index: 100;
+    color: var(--dark2);
+    font-size: 10px;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+}
+
+/* .bot-cloud {
+    padding-top: 50px;
+    width: 100px;
+    position: absolute;
+    
+} */
+
+.mount-2 {
+    position: relative;
+    text-align: center;
+}
+
+/* MIDDLE CONTAINER */
+
+.middle-container {
+    padding: 100px 10%;
+    position: relative;
+    text-align: center;
+}
+
+.profile {
+    /* width: 50%;
+    float: left; */
+    color: var(--dark2);
+    margin: 10px;
+    padding: 10px;
+}
+
+.profile img {
+    height: 50%;
+    width: 200px;
+    position: relative;
+    box-shadow: 5px 5px 20px #888888;
+    border-radius: 500px;
+    margin-bottom: 30px;
+}
+
+.profile h2 {
+    margin: 10px auto;
+    font-size: var(--big-font);
+}
+
+.profile a {
+    color: var(--dark2);
+    transition: all .30s;
+}
+
+.profile a:hover {
+    letter-spacing: 1px;
+    text-shadow: 7px 10px 10px var(--dark2);
+}
+
+.profile h3 {
+    margin: 10px 15%;
+    padding: 50px;
+}
+
+.profile p {
+    transition: all .30s;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 10px auto;
+    line-height: 30px;
+}
+
+.skills {
+    /* width: 50%; */
+    color: var(--dark2);
+    margin: 20px;
+    padding: 15px;
+}
+
+.skills h2 {
+    margin: 10px auto;
+}
+
+.skills img {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    /* box-shadow: 5px 5px 20px #888888; */
+    border-radius: 500px;
+    margin-bottom: 30px;
+}
+
+.skills a {
+    color: var(--dark2);
+    transition: ease .30s;
+    font-size: var(--big-font);
+}
+
+.skills a:hover{
+    text-shadow: 7px 10px 5px var(--dark2);
+    letter-spacing: 1px;
+}
+
+.skills i {
+    font-size: 25px;
+}
+
+.skill-row-1 {
+    position: relative;
+    width: 50%;
+    float: left;
+    /* margin: 10px; */
+    padding: 20px;
+    bottom: 20px;
+    line-height: 25px;
+    
+}
+
+.skill-row-2 {
+    /* margin: 10px; */
+    position: relative;
+    padding: 20px;
+    width: 50%;
+    float: right;
+    bottom: 20px;
+    line-height: 25px;
+}
+
+/* MIDDLE CONTAINER - CONTACT ME */
+
+.contact-me {
+    margin: 20px auto;
+}
+
+.contact-me h2 {
+    margin: 10px auto;
+    font-size: var(--big-font);
+}
+
+.contact-me h3 {
+    margin: 10px auto;
+    
+}
+
+.contact-me-title {
+    color: var(--dark2);
+    transition: all .30s;
+}
+
+.contact-me-title:hover {
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 5px var(--dark2);
+}
+
+.contact-me p {
+    margin: 0 auto 20px auto;
+    padding: 10px;
+
+}
+
+.contact-me-btn {
+    border-radius: 30px;
+    margin: 10px 5%;
+    padding: 10px;
+    background: var(--dark2);
+    color: var(--bg-color);
+}
+
+/* BOTTOM CONTAINER */
+
+.bottom-container {
+    background: var(--dark2);
+    color: var(--bg-color);
+    padding: 10px 10%;
+    text-align: center;
+    
+}
+
+.link-footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 400px 0 400px;
+}
+
+.footer-link {
+    margin: 10px auto;
+    color: var(--bg-color);
+    transition: ease .40s;
+}
+
+.footer-link:hover {
+    letter-spacing: 1px;
+}
+
+.bottom-container p {
+    margin: 10px;
+}
+
