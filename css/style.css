@@ -36,109 +36,12 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    padding: 25px 15%;
-    transition-duration: .3s;
-}
-
-.h4-span span {
-    color: var(--color3);
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-shadow: 7px 10px 5px var(--dark2);
-    text-transform: uppercase;
-}
-
-.titik {
-    color: var(--text2);
-}
-
-.logo {
-    color: var(--dark1);
-    font-size: 30px;
-    font-weight: 500;
-    padding: 10px;
-    transition: all .30s;
-    
-}
-
-.logo:hover {
-    letter-spacing: 1rem;
-    transform: translateY(10px);
-    border: none;
-    text-shadow: 7px 10px 10px var(--dark2);
-}
-
-.navBar {
-    display: flex;
-    
-}
-
-.navBar li {
-    position: relative;
-}
-
-.navBar a {
-    color: var(--dark1);
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 10px 20px;
-}
-
-.navBar a::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height:2px;
-    background: var(--dark1);
-    left: 0;
-    bottom: -4px;
-    transition: ease .40s;
-}
-
-.navBar a:hover::after {
-    width: 100%;
-}
-
-
 #menu-icon {
     font-size: 32px;
     color: var(--dark2);
     z-index: 10;
     cursor: pointer;
     display: none;
-}
-
-.h-btn{
-    padding: 0 20px;
-    height: 40px;
-    display: inline-black;
-    line-height: 42px;
-    background: transparent;
-    color: var(--dark2);
-    border: none;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: all .30s;
-}
-
-.h-btn:hover {
-    /* background: var(--dark1);
-    color: var(--text1); */
-    transform: translateY(-5px);
-    text-shadow: 7px 10px 10px var(--dark2);
-    letter-spacing: 3px;
 }
 
 /* TOP CONTAINER */
@@ -327,11 +230,32 @@ header {
 }
 
 .contact-me-btn {
-    border-radius: 30px;
-    margin: 10px 5%;
-    padding: 10px;
-    background: var(--dark2);
-    color: var(--bg-color);
+    background: #3c2f2f;
+    background-image: -webkit-linear-gradient(top, #3c2f2f, #3c2f2f);
+    background-image: -moz-linear-gradient(top, #3c2f2f, #3c2f2f);
+    background-image: -ms-linear-gradient(top, #3c2f2f, #3c2f2f);
+    background-image: -o-linear-gradient(top, #3c2f2f, #3c2f2f);
+    background-image: linear-gradient(to bottom, #3c2f2f, #3c2f2f);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.contact-me-btn:hover {
+    background: #be9b7b;
+  background-image: -webkit-linear-gradient(top, #be9b7b, #3c2f2f);
+  background-image: -moz-linear-gradient(top, #be9b7b, #3c2f2f);
+  background-image: -ms-linear-gradient(top, #be9b7b, #3c2f2f);
+  background-image: -o-linear-gradient(top, #be9b7b, #3c2f2f);
+  background-image: linear-gradient(to bottom, #be9b7b, #3c2f2f);
+  text-decoration: none;
+  transform: translateY(10px);
 }
 
 /* BOTTOM CONTAINER */
@@ -341,10 +265,10 @@ header {
     color: var(--bg-color);
     padding: 10px 10%;
     text-align: center;
-    
 }
 
 .link-footer {
+    height: 50%;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -352,7 +276,8 @@ header {
 }
 
 .footer-link {
-    margin: 10px auto;
+    letter-spacing: 1px;
+    margin: 10px 20px;
     color: var(--bg-color);
     transition: ease .40s;
 }
@@ -362,6 +287,9 @@ header {
 }
 
 .bottom-container p {
-    margin: 10px;
+    padding: 10px 0 10px 50px;
+    /* align-items: center; */
+    font-size: 0.7rem;
+    letter-spacing: 2px;
 }
 

@@ -1,0 +1,53 @@
+/* .navBar {
+    display: flex;
+    
+}
+
+.navBar li {
+    position: relative;
+}
+
+.navBar a {
+    color: var(--dark1);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.navBar a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height:2px;
+    background: var(--dark1);
+    left: 0;
+    bottom: -4px;
+    transition: ease .40s;
+}
+
+.navBar a:hover::after {
+    width: 100%;
+} */
+
+/* .h-btn{
+    padding: 0 20px;
+    height: 40px;
+    display: inline-black;
+    line-height: 42px;
+    background: transparent;
+    color: var(--dark2);
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .30s;
+} */
+
+/* .h-btn:hover {
+    background: var(--dark1);
+    color: var(--text1);
+    transform: translateY(-5px);
+    text-shadow: 7px 10px 10px var(--dark2);
+    letter-spacing: 3px;
+} */
